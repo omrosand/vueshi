@@ -10,6 +10,13 @@ body {
   padding: 0;
   margin: 0;
 }
+main {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  padding-top: 2em;
+}
 
 h1,
 h2,
