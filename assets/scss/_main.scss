@@ -1,0 +1,143 @@
+header {
+  background: no-repeat url(../../img/sushibanner.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+nav {
+  //border: 1px solid red;
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 2rem;
+      font-family: $nav;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 40px 0 0 40px;
+      width: 6.5em;
+      display: flex;
+      align-items: center;
+      svg {
+        color: rgb(234, 234, 234);
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      width: 100%;
+      color: rgb(234, 234, 234);
+      padding: 0.5em 1em;
+    }
+  }
+}
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.menuCategories {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  display: flex;
+  gap: 2px;
+  justify-content: space-between;
+  li:first-child {
+    border-radius: 0 0 0 25px;
+  }
+  li:last-child {
+    border-radius: 0 0 25px 0;
+  }
+  li {
+    background-color: #437389;
+    flex-grow: 1;
+    display: flex;
+    &:hover {
+      background-color: #30576a;
+      color: rgb(196, 238, 255);
+    }
+    a {
+      font-family: $header;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      color: rgb(196, 238, 255);
+      text-shadow: 1px 1px 2px $secondary;
+      width: 100%;
+      padding: 10px;
+      //box-shadow: inset 0px 0px 3px $secondary;
+    }
+    .router-link-exact-active {
+      color: $secondary;
+      text-shadow: none;
+    }
+  }
+}
+.menuItems {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-gap: 2em;
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+  li {
+    background-color: $secondary;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 2em;
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: $primary;
+      text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+    }
+    h4 {
+      color: rgb(255, 255, 172);
+      font-size: 1.3rem;
+      margin: 0;
+    }
+    h5 {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin: 0;
+    }
+    img {
+      max-width: 225px;
+      border-radius: 2em;
+      border: 2px solid $accent;
+    }
+    .categoryTag {
+      font-family: $nav;
+      font-size: 1.3rem;
+      padding: 2px 10px;
+      border-radius: 10px;
+      color: $secondary;
+      background-color: rgb(255, 185, 72);
+    }
+  }
+}

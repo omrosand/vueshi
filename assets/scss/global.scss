@@ -1,0 +1,36 @@
+@import "main";
+
+body {
+  background: rgb(43, 69, 77);
+  background: radial-gradient(
+    circle,
+    rgb(33, 53, 59) 0%,
+    rgba(11, 17, 19, 1) 100%
+  );
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header;
+  color: $text;
+}
+
+p {
+  font-family: $paragraph;
+  color: $text;
+}
+button {
+  @extend p;
+  font-size: 1.4rem;
+  background-color: $secondary;
+  border: 1px solid $text;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}
