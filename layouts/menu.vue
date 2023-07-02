@@ -1,9 +1,13 @@
 <template>
   <div>
     <main>
-      <NuxtLink to="/" class="back"
-        ><Icon name="ic:twotone-arrow-back" /> Back to home</NuxtLink
-      >
+      <div class="wrapper">
+        <NuxtLink to="/" class="back"
+          ><Icon name="ic:twotone-arrow-back" /> Back</NuxtLink
+        >
+        <NuxtLink to="/" class="menuTitle">Averøy Sushi</NuxtLink>
+      </div>
+
       <MenuNav />
       <slot />
     </main>
