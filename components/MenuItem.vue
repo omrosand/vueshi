@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["menu"]);
+const { menu } = defineProps(["menu"]);
 </script>
 
 <template>
